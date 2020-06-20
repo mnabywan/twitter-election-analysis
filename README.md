@@ -18,7 +18,7 @@ Moduł persystencji pobiera informacje o tweetach i persystuje je w bazie SQLite
 Pozwala także na pobranie pełnych informacji o tweecie (wraz z tekstem) do formatu json, aby móc analizować tekst tweetów.
 
 <br />
-<br/>
+<br />
 Posiadając infromacje o twittach możemy wykonywać następujące analizy: 
 - statystyczne - np. liczba tweetów poszczególnych kandydatów w czasie
 - tekstowa - np. analiza popularnych słów używanych przez kandydatów
@@ -67,7 +67,7 @@ dla kont związanych z danym kandydatem. W tym celu dane pobierane są z bazy SQ
 Plik [account_tweets_by_candidate_analysis.py](./scripts/account_tweets_by_candidate_analysis.py) tworzy wykresy tego samego typu co [tweets_by_candidate_analysis.py]((./scripts/tweets_by_candidate_analysis.py)) z tą różnicą, że wykres dotyczy każdego kandydata z osobna.
 Pozwala to zobaczyć, jaki wkład w aktywność całego sztabu konkretnego kandydata mają poszczególne konta z nim związane.
 
-<br /> <br />
+<br />
 Używane biblioteki
 - sqlite3
 - matplotlib
@@ -79,7 +79,7 @@ Efektem analizy są wykresy najczęściej używanych słów dla każdego kandyda
 Powstałe wykresy i chmury słów są zapisywane odpowiednio w folderach [server/static/charts](./server/static/charts)
 a także [server/static/wordclouds](.server/static/wordclouds). 
 
-<br /> <br />
+<br />
 Używane biblioteki
 - morfeusz2
 - wordcould
@@ -92,7 +92,7 @@ Plik [sna.py](./scripts/sna.py) zawiera metody pozwalające na analizę tweetów
 Efektem analizy są grafy prezentujące konta, z którymi konta kandydatów wchodziły w interakcję, a także prezentujące sieci zawierające konta, które tworzyły tweety o danym
 kandydacie. Powstałe grafy i informacje o grafach są zapisywane w folderze [server/static/graphs](./server/static/graphs).
 
-<br /> <br />
+<br />
 Używane biblioteki
 - networkx
 - numpy
