@@ -7,7 +7,7 @@ Aplikacja stworzona na potrzeby przedmiotu Inżynieria Oprogramowania.
 ## Opis
 Aplikacja umożliwia pobieranie danych z Twittera na podstawie użytkowników a także słów kluczowych, hashtagów 
 dotyczących wyborów prezydenckich w Polsce w 2020 roku.<br />
-
+Projekt jest szczegółowo opisany w [dokumentacji](./wybory%20prezydenckie-dokumentacja.pdf).
 
 #### Architektura: 
 
