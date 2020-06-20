@@ -4,7 +4,7 @@
 Aplikacja stworzona na potrzeby przedmiotu Inżynieria Oprogramowania
 
 
-##Opis
+## Opis
 Aplikacja umożliwia pobieranie danych z Twittera na podstawie użytkowników a także słów kluczowych, hashtagów 
 dotyczących wyborów prezydenckich w Polsce w 2020 roku.<br />
 
@@ -12,12 +12,12 @@ dotyczących wyborów prezydenckich w Polsce w 2020 roku.<br />
 Architektura: 
 
 ![Alt text](images/archiecture.png?raw=true "Title")
+<br /> <br />
 
+Moduł persystencji pobiera informacje o tweetach i persystuje je w bazie SQLite.
+Pozwala także na pobranie pełnych informacji o tweecie (wraz z tekstem) do formatu json, aby móc analizować tekst tweetów.
 
-Moduł persystencji pobiera informacje o tweetach i persystuje je w 
-
-
-Pobierane informacje o twittach są persystowane w bazie SQLite. <br />
+<br />
 <br/>
 Posiadając infromacje o twittach możemy wykonywać następujące analizy: 
 - statystyczne - np. liczba tweetów poszczególnych kandydatów w czasie
