@@ -73,7 +73,6 @@ if __name__ == '__main__':
     for name in res:
         tables.append(name[0])
 
-    #TODO: fetch this from candidates file
     candidates={
         "Duda":'duda_hashtags',
         "Biedron":'biedron_hashtags',

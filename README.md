@@ -51,7 +51,62 @@ i społeczności.
 
 <br /> <br />
 Używane biblioteki
+- sqlite3
 - tweepy
+
+
+### Moduł analizy statystycznej
+Plik [likes_analysis.py](./scripts/likes_analysis.py) zawiera metody pozwalające na wygenerowanie wykresów sumarycznej liczby polubień, retweetów dla poszczególnych kandydatów,
+a także liczby przyjaciół i obserwujących danego konta. Powstałe wykresy są zapisywane w folderze [server/static/charts](./server/static/charts), aby móc później być wyśiwtlone.
+<br /> <br />
+
+Plik [tweets_by_candidate_analysis.py](./scripts/tweets_by_candidate_analysis.py) zawiera metody pozwalające stworzyć wykresy tweetów, polubień i retweetów w zależności od czasu
+dla kont związanych z danym kandydatem. W tym celu dane pobierane są z bazy SQLite, tworzone są DataFrame'y i następnie wykres jest zapisywane w folderze [server/static/charts](./server/static/charts), aby móc później być wyśiwtlone.
+<br /> <br />
+
+Plik [account_tweets_by_candidate_analysis.py](./scripts/account_tweets_by_candidate_analysis.py) tworzy wykresy tego samego typu co [tweets_by_candidate_analysis.py]((./scripts/tweets_by_candidate_analysis.py)) z tą różnicą, że wykres dotyczy każdego kandydata z osobna.
+Pozwala to zobaczyć, jaki wkład w aktywność całego sztabu konkretnego kandydata mają poszczególne konta z nim związane.
+
+<br /> <br />
+Używane biblioteki
+- sqlite3
+- matplotlib
+- pandas
+
+### Moduł analizy tekstowej
+Plik [sentiment_anlaysis.py](./scripts/sentiment_analysis.py) zawiera metody pozwalające na analizę tekstu tweetów, bazując na tweetach zawartch w plikach json. 
+Efektem analizy są wykresy najczęściej używanych słów dla każdego kandydata, wyznaczona miara podobieńtwa języka między poszczególnymi kandudatami, a także chmury słów. 
+Powstałe wykresy i chmury słów są zapisywane odpowiednio w folderach [server/static/charts](./server/static/charts)
+a także [server/static/wordclouds](.server/static/wordclouds). 
+
+<br /> <br />
+Używane biblioteki
+- morfeusz2
+- wordcould
+- matplotlib
+- pandas
+
+
+### Moduł analizy społeczności
+Plik [sna.py](./scripts/sna.py) zawiera metody pozwalające na analizę tweetów pod względem społeczności.
+Efektem analizy są grafy prezentujące konta, z którymi konta kandydatów wchodziły w interakcję, a także prezentujące sieci zawierające konta, które tworzyły tweety o danym
+kandydacie. Powstałe grafy i informacje o grafach są zapisywane w folderze [server/static/graphs](./server/static/graphs).
+
+<br /> <br />
+Używane biblioteki
+- networkx
+- numpy
+- matplotlib
+- pandas
+
+
+### Serwer aplikacji
+Wyniki otrzymane w wyniku powyższych analiz są prezentowane w formie aplikacji webowej we frameworku Flask. 
+Część frontendową stanowią strony stworzone przy pomocy Bootstrapa-
+frameworka CSS wypełniane przez back-end za pomocą silnika szablonów Jijnja2, który umożliwia ewaluację zmiennych wewnątrz 
+przygotowanego wcześniej szkieletu HTML. Jako, że wbudowany serwer WSGI Flaska nie jest rekomendowany,
+do uruchomienia aplikacji będziemy wykorzystywać serwer WSGI gunicorn.
+
 
 
 ## Instalacja
