@@ -10,7 +10,6 @@ CANDIDATES = [DUDA, KIDAWA, KOSINIAK, BIEDRON, BOSAK, HOLOWNIA]
 DUDA_ACCOUNTS = ['AndrzejDuda', 'AndrzejDuda2020', 'mecenasJTK', 'jbrudzinski', 'AdamBielan', 'pisorgpl']
 DUDA_HASHTAGS = [ '#AndzejDuda2020', '#PAD2020', '#NiechŻyjePolska']
 
-#'Duda2020',
 
 KIDAWA_ACCOUNTS = ['M_K_Blonska', 'adamSzlapka', 'Arlukowicz', 'Platforma_org']
 KIDAWA_HASHTAGS = [ '#Kidawa2020', '#KidawaTeam', '#MuremzaKidawą', '#PrawdziwaPrezydent']
@@ -27,11 +26,10 @@ BOSAK_HASHTAGS = ['#Bosak2020', '#PrezydentBosak', '#NaprzódPolsko']
 HOLOWNIA_ACCOUNTS = ['szymon_holownia', 'michalkobosko']
 HOLOWNIA_HASHTAGS = ['#Holownia2020', '#ekipaSzymona', '#BezpartyjnyBezpiecznik']
 
-ELECTION_HASHTAGS = [
+ELECTION_HASHTAGS = [ '#GłosowanieKorespondencyjne', '#WyboryKorespondencyjne', '#PrzełożyćWybory',
+                      '#IdziemyNaWybory', '#Wybory2020',  '#WyboryPrezydenckie2020',
                       '#wybory', '#wyPAD2020']
 
-#'#GłosowanieKorespondencyjne', '#WyboryKorespondencyjne', '#PrzełożyćWybory',
-             #         '#IdziemyNaWybory', '#Wybory2020',  '#WyboryPrezydenckie2020',
 
 JOURNALISTS_ACCOUNTS = ['lis_tomasz', 'patrykmichalski', 'EMichalik', 'PawelWronskigw', 'DWielowieyska', 
                                                     'sekielski', 'tzolciak', 'PatrykWachowiec', 'Renata_Grochal', 'michalkarnowski',

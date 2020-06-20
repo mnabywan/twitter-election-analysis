@@ -1,7 +1,7 @@
 # Twitter Election Analysis
 
 Środowisko do pozyskiwania spójnych tematycznych zbiorów danych (wg. zbiorów użytkowników lub według zbiorów słów kluczowych) z platformy Twitter. <br/> 
-Aplikacja stworzona na potrzeby przedmiotu Inżynieria Oprogramowania
+Aplikacja stworzona na potrzeby przedmiotu Inżynieria Oprogramowania.
 
 
 ## Opis
@@ -9,7 +9,7 @@ Aplikacja umożliwia pobieranie danych z Twittera na podstawie użytkowników a 
 dotyczących wyborów prezydenckich w Polsce w 2020 roku.<br />
 
 
-Architektura: 
+#### Architektura: 
 
 ![Alt text](images/archiecture.png?raw=true "Title")
 <br /> <br />
@@ -28,7 +28,30 @@ Posiadając infromacje o twittach możemy wykonywać następujące analizy:
 Wyniki analiz w postaci wykresów, chmur słów czy grafów społeczności są wyświetlane na serwerze.
 
 
+## Struktura projektu
+#### Baza danych
+Baza danych znajduje się w folderze [db](./db). <br />
+[Twitter.db](./db/Twitter.db) to plik bazy SQLite, zawierający pobrane dane pobrane przy użyciu tweepy.
+<br />
+Do analizy tekstu tweetów używaliśmy tweetów zapisanych w formacie json. Z powodów ograniczeń pojemności GitHuba, nie mogliśmy umieścić używanych plików
+w folderze. Aby móc analizować tweety pod kątem społeczności czy tekstu należy pobrać odpowiednie pliki z [folderu z Google Drive](https://drive.google.com/file/d/1drf4xsqVBeXQ2IzYVhHIE0Mv10AVEA-p/view?usp=sharing) i umieścić je w folderze [db](./db).
 
+<br>
+
+#### Moduł persystencji
+Plik [persist_tweets.py](./scripts/persist_tweets.py) zawiera metody pozwalające na pobieranie tweetów, których autorami są określeni użykownicy (związani z danym kandydatem),
+a także metody pozwalające na pobieranie tweetów zawierających dany hashtag.
+<br /> Hahstagi i konta kandydatów są spisane w pliku [candidates.py](./scripts/candidates.py).
+<br /> Pobrane tweety są persystowane w bazie SQLite. 
+<br /> <br />
+Plik [twitter_json_create.py](./scripts/twitter_json_create.py) pozwala na pobranie tweetów na podstawie id z bazy SQLite
+do plików json. Dzięki temu w pliku json znajdują się tweety z pełną informacją o autorze, zawartością tekstu, co jest używane w analizie tekstu
+i społeczności.
+
+
+<br /> <br />
+Używane biblioteki
+- tweepy
 
 
 ## Instalacja
