@@ -6,7 +6,7 @@ from os import path
 scripts_path = path.abspath('../scripts')
 modules_directories.append(scripts_path)
 import authentication
-import analysis
+import likes_analysis
 from candidates import CANDIDATES
 
 app = Flask(__name__)
