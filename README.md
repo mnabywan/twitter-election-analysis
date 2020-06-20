@@ -81,10 +81,10 @@ a także [server/static/wordclouds](.server/static/wordclouds).
 
 <br />
 Używane biblioteki
-- morfeusz2
-- wordcould
-- matplotlib
-- pandas
+-morfeusz2
+-wordcould
+-matplotlib
+-pandas
 
 
 ### Moduł analizy społeczności
@@ -94,10 +94,10 @@ kandydacie. Powstałe grafy i informacje o grafach są zapisywane w folderze [se
 
 <br />
 Używane biblioteki
-- networkx
-- numpy
-- matplotlib
-- pandas
+-networkx
+-numpy
+-matplotlib
+-pandas
 
 
 ### Serwer aplikacji
