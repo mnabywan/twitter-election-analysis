@@ -11,8 +11,8 @@ Aplikacja stworzona na potrzeby przedmiotu Inżynieria Oprogramowania.
 4. [server](./server) - katalog do z plikiem do uruchomienia aplikacji webowej prezentującej wyniki analiz
     - [server/static](./server/static) - katalog z wykresami, grafami i wordcloudami wyświetlanymi na stronie 
     - [server/templates](./server/templates) - katalog z szablonami stron 
-    - [server/tables](./server/tables) - katalog z bardziej specyficznymi szablonami
-5. [documentation](./documentation) - katalog z dokumentacją w pdf i docx
+5. [tables](./tables) - katalog z bardziej specyficznymi szablonami
+6. [documentation](./documentation) - katalog z dokumentacją w pdf i docx
 
 ## Opis
 Aplikacja umożliwia pobieranie danych z Twittera na podstawie użytkowników a także słów kluczowych, hashtagów 
