@@ -4,10 +4,20 @@
 Aplikacja stworzona na potrzeby przedmiotu Inżynieria Oprogramowania.
 
 
+## Zawartość repozytorium 
+1. [db](./db) - katalog zawierający pliki bazy danych
+2. [images](./images) - katalog z rysunkiem architektury, źródło: [architektura](https://drive.google.com/file/d/1hvOIvMv7a2S3ekBFUkiAQsll1CnZw8G2/view?usp=sharing)
+3. [scripts](./scripts) - katalog z plikami pozwalającymi na pobieranie danych z Twittera i analizę
+4. [server](./server) - katalog do z plikiem do uruchomienia aplikacji webowej prezentującej wyniki analiz
+    - [server/static](./server/static) - katalog z wykresami, grafami i wordcloudami wyświetlanymi na stronie 
+    - [server/templates](./server/templates) - katalog z szablonami stron 
+    - [server/tables](./server/tables) - katalog z bardziej specyficznymi szablonami
+5. [documentation](./documentation) - katalog z dokumentacją w pdf i docx
+
 ## Opis
 Aplikacja umożliwia pobieranie danych z Twittera na podstawie użytkowników a także słów kluczowych, hashtagów 
 dotyczących wyborów prezydenckich w Polsce w 2020 roku.<br />
-Projekt jest szczegółowo opisany w [dokumentacji](./wybory%20prezydenckie-dokumentacja.pdf).
+Projekt jest szczegółowo opisany w [dokumentacji](./documentation).
 
 #### Architektura: 
 
